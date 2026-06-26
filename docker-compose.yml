@@ -1,0 +1,19 @@
+services:
+  api:
+    build: .
+    image: queue-storm-investigator:latest
+    container_name: qsi
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      HOST: "0.0.0.0"
+      PORT: "8000"
+      LOG_LEVEL: "INFO"
+      USE_LLM: "false"
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
