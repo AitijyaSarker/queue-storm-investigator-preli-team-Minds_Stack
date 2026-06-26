@@ -5,7 +5,45 @@
 
 An AI/API SupportOps copilot that triages digital-finance complaint tickets. It reads the complaint, correlates it against recent transaction history, classifies the case, routes it to the right department, and drafts a **safe** customer reply that never asks for credentials, never confirms an unauthorized refund, and never sends a customer to a suspicious third party.
 
+---
+
+## 0. Team — Minds_Stack
+
+| Role            | Name                          | Email                       | Affiliation              |
+| --------------- | ----------------------------- | --------------------------- | ------------------------ |
+| **Leader**      | Aitijya Sarker Atibo          | aitijyasarker@gmail.com     | Metropolitan University  |
+| Member          | Jubayer Rahman Chowdhury      | jubayer.at.03@gmail.com     | Metropolitan University  |
+
+**Submission paths**
+
+- **A. Live URL** — `https://6a3d50b2e8fb51ddad2fcea5_b1de56e6.lb.poridhi.io` (Poridhi Lab)
+- **B. Docker image** — `docker pull aitijyasarker/queue-storm-investigator:latest` then `docker run --rm -p 8000:8000 aitijyasarker/queue-storm-investigator:latest`
+- **C. Runbook** — see [`RUNBOOK.md`](./RUNBOOK.md)
+
 This is an internal **support copilot**, not an autonomous financial decision maker. Every ambiguous, risky, or high-value case is escalated for human review.
+
+---
+
+## Contents
+
+| #  | Section                | Required by §11      |
+| -- | ---------------------- | -------------------- |
+| 1  | Project Overview       | —                    |
+| 2  | Tech Stack             | **Tech stack**       |
+| 3  | Folder Structure       | —                    |
+| 4  | Installation & Run     | **Setup + run cmd**  |
+| 5  | Environment Variables  | `.env.example`       |
+| 6  | Deployment             | —                    |
+| 7  | API Documentation      | —                    |
+| 8  | Sample Request & Response | **Sample output** |
+| 9  | AI Architecture        | **AI approach**      |
+| 10 | Safety Architecture    | **Safety logic**     |
+| 11 | MODELS                 | **Models + cost**    |
+| 12 | Performance            | —                    |
+| 13 | Assumptions            | **Assumptions**      |
+| 14 | Known Limitations      | **Known limits**     |
+| 15 | Testing                | —                    |
+| 16 | Submission             | —                    |
 
 ---
 
